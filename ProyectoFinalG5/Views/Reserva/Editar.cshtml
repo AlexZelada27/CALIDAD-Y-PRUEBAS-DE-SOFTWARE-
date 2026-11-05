@@ -6,6 +6,17 @@
 
     <form method="post">
 
+        <!-- Mensajes de error generales sin viñetas ni puntos -->
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="text-danger small mb-3">
+                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <div>@error.ErrorMessage</div>
+                }
+            </div>
+        }
+
         <input type="hidden" name="IdReserva" value="@Model.IdReserva" />
 
         <div class="mb-3">
@@ -124,5 +135,4 @@
         <a href="/Reserva/Listar" class="btn btn-secondary">Cancelar</a>
 
     </form>
-
 </div>

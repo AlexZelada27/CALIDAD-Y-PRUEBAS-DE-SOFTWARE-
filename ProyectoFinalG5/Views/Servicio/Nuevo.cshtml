@@ -12,35 +12,45 @@
 
             <h3 class="text-center mb-4">Nuevo Servicio</h3>
 
-            <form method="post">
+            <form asp-action="Nuevo" method="post">
 
                 <div class="mb-3">
                     <label class="form-label">Nombre</label>
                     <input asp-for="Nombre" class="form-control" placeholder="Ej: Grabación" />
+                    <span asp-validation-for="Nombre" class="text-danger small"></span>
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Precio</label>
                     <input asp-for="Precio" type="number" step="0.01" class="form-control" placeholder="Ej: 50.00" />
+                    <span asp-validation-for="Precio" class="text-danger small"></span>
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Tipo de Servicio</label>
 
                     <select asp-for="IdTipoServicio" class="form-control">
-
                         <option value="">-- Seleccione un tipo --</option>
-
-                        @foreach (var t in ViewBag.TipoServicios)
+                        @if (ViewBag.TipoServicios != null)
                         {
-                            <option value="@t.IdTipoServicio">
-                                @t.Nombre
-                            </option>
+                            foreach (var t in ViewBag.TipoServicios)
+                            {
+                                <option value="@t.IdTipoServicio">@t.Nombre</option>
+                            }
                         }
-
                     </select>
-
+                    <span asp-validation-for="IdTipoServicio" class="text-danger small"></span>
                 </div>
+
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div class="text-danger small mb-3">
+                        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                        {
+                            <div>@error.ErrorMessage</div>
+                        }
+                    </div>
+                }
 
                 <button type="submit" class="btn btn-success w-100">
                     Guardar
@@ -50,5 +60,4 @@
 
         </div>
     </div>
-
 </div>

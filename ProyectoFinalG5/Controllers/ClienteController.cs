@@ -28,6 +28,28 @@ namespace ProyectoFinalG5.Controllers
         [HttpPost]
         public IActionResult Nuevo(Cliente c)
         {
+            // Limpia cualquier error previo o automático en inglés
+            ModelState.Clear();
+
+            // === VALIDACIÓN PARA EL CP-02: CAMPOS OBLIGATORIOS VACÍOS ===
+            if (string.IsNullOrWhiteSpace(c.Nombre))
+            {
+                ModelState.AddModelError("Nombre", "El nombre es obligatorio.");
+            }
+
+            if (string.IsNullOrWhiteSpace(c.Telefono))
+            {
+                ModelState.AddModelError("Telefono", "El teléfono es obligatorio.");
+            }
+            // ============================================================
+
+            // Si hay algún campo vacío, el ModelState no será válido y se detiene el proceso
+            if (!ModelState.IsValid)
+            {
+                // Retorna la misma vista mostrando los mensajes de error configurados arriba
+                return View(c);
+            }
+
             var email = HttpContext.Session.GetString("EmailUsuario");
 
             if (string.IsNullOrEmpty(email))

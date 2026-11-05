@@ -658,3 +658,5 @@ E:\Ciclos_Universidad_UPN\8vo Ciclo\Calidad y Pruebas Software\Proyecto (Zip)\Pr
 E:\Ciclos_Universidad_UPN\8vo Ciclo\Calidad y Pruebas Software\Proyecto (Zip)\ProyectoFinalG5\ProyectoFinalG5\Prueba_de_calidad_ZoneStyle\obj\Debug\net10.0\Prueba_d.2464C2F7.Up2Date
 E:\Ciclos_Universidad_UPN\8vo Ciclo\Calidad y Pruebas Software\Proyecto (Zip)\ProyectoFinalG5\ProyectoFinalG5\Prueba_de_calidad_ZoneStyle\obj\Debug\net10.0\Prueba_de_calidad_ZoneStyle.genruntimeconfig.cache
 E:\Ciclos_Universidad_UPN\8vo Ciclo\Calidad y Pruebas Software\Proyecto (Zip)\ProyectoFinalG5\ProyectoFinalG5\Prueba_de_calidad_ZoneStyle\obj\Debug\net10.0\ref\Prueba_de_calidad_ZoneStyle.dll
+E:\Ciclos_Universidad_UPN\8vo Ciclo\Calidad y Pruebas Software\Proyecto (Zip)\ProyectoFinalG5\ProyectoFinalG5\Prueba_de_calidad_ZoneStyle\bin\Debug\net10.0\dotnet-tools.json
+E:\Ciclos_Universidad_UPN\8vo Ciclo\Calidad y Pruebas Software\Proyecto (Zip)\ProyectoFinalG5\ProyectoFinalG5\Prueba_de_calidad_ZoneStyle\obj\Debug\net10.0\Prueba_de_calidad_ZoneStyle.sourcelink.json

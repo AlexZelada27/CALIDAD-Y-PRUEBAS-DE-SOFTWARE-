@@ -52,68 +52,99 @@ namespace ProyectoFinalG5.Controllers
         }
 
 
-
-
-
         [HttpPost]
         public IActionResult Nuevo(Reserva r, int[] serviciosSeleccionados, string metodoPago)
         {
             CargarCombos();
 
             ViewBag.MetodosPago = new List<string>
-    {
-        "Efectivo",
-        "Yape",
-        "Transferencia",
-        "Tarjeta"
-    };
+            {
+                "Efectivo",
+                "Yape",
+                "Transferencia",
+                "Tarjeta"
+            };
 
+            ViewBag.ServicioSeleccionado = serviciosSeleccionados?.FirstOrDefault();
+
+            // =========================================================================
+            // VALIDACIÓN DE CAMPOS OBLIGATORIOS (Sin alterar el funcionamiento original)
+            // =========================================================================
+            if (r.IdCliente <= 0)
+            {
+                ModelState.AddModelError("IdCliente", "El cliente es obligatorio.");
+            }
+
+            if (r.IdEmpleado <= 0)
+            {
+                ModelState.AddModelError("IdEmpleado", "El empleado es obligatorio.");
+            }
+
+            if (r.IdHorarioFijo <= 0)
+            {
+                ModelState.AddModelError("IdHorarioFijo", "El horario es obligatorio.");
+            }
+
+            if (r.IdSala <= 0)
+            {
+                ModelState.AddModelError("IdSala", "La sala es obligatoria.");
+            }
+
+            if (string.IsNullOrEmpty(metodoPago))
+            {
+                ModelState.AddModelError("", "El método de pago es obligatorio.");
+            }
+
+            if (r.FechaReserva == default)
+            {
+                ModelState.AddModelError("FechaReserva", "La fecha de reserva es obligatoria.");
+            }
+
+            // =========================================================================
+            // VALIDACIÓN DE FECHA Y HORA PASADA
+            // =========================================================================
+            if (r.FechaReserva != default && r.IdHorarioFijo > 0)
+            {
+                var horario = _context.HorariosFijos.Find(r.IdHorarioFijo);
+                if (horario != null)
+                {
+                    var fechaHoraReserva = r.FechaReserva.Date + horario.HoraInicio;
+
+                    if (fechaHoraReserva <= DateTime.Now)
+                    {
+                        ModelState.AddModelError("", "No se puede registrar una reserva en una fecha u hora que ya ha pasado.");
+                    }
+                }
+            }
+            // =========================================================================
 
             if (!ModelState.IsValid)
                 return View(r);
-
-
 
             var ocupado = _context.Reservas.Any(x =>
                 x.IdHorarioFijo == r.IdHorarioFijo &&
                 x.FechaReserva == r.FechaReserva);
 
-
-
             if (ocupado)
             {
                 ModelState.AddModelError("", "El horario seleccionado ya está ocupado");
-
                 return View(r);
             }
 
-
-
-
             decimal total = 0;
-
 
             if (serviciosSeleccionados != null)
             {
-
                 foreach (var id in serviciosSeleccionados)
                 {
-
                     var servicio = _context.Servicios.Find(id);
-
 
                     if (servicio != null)
                     {
                         total += servicio.Precio;
                     }
-
                 }
-
             }
-
-
-
-
 
             var pago = new Pago
             {
@@ -121,16 +152,8 @@ namespace ProyectoFinalG5.Controllers
                 MetodoPago = metodoPago
             };
 
-
-
             _context.Pagos.Add(pago);
-
             _context.SaveChanges();
-
-
-
-
-
 
             var reserva = new Reserva
             {
@@ -143,69 +166,33 @@ namespace ProyectoFinalG5.Controllers
                 Estado = "Pendiente"
             };
 
-
-
             _context.Reservas.Add(reserva);
-
             _context.SaveChanges();
-
-
-
-
-
-
 
             List<ReservaServicio> detalles = new();
 
-
-
-
             if (serviciosSeleccionados != null)
             {
-
-
                 foreach (var id in serviciosSeleccionados)
                 {
-
-
                     var servicio = _context.Servicios.Find(id);
-
-
 
                     if (servicio != null)
                     {
-
-
                         detalles.Add(new ReservaServicio
                         {
                             IdReserva = reserva.IdReserva,
                             IdServicio = servicio.IdServicio,
                             Precio = servicio.Precio
                         });
-
-
                     }
-
-
                 }
-
-
             }
 
-
-
-
-
-
             _context.ReservaServicios.AddRange(detalles);
-
             _context.SaveChanges();
 
-
-
-
             return RedirectToAction("Listar");
-
         }
 
         public IActionResult Editar(int id)
@@ -240,6 +227,27 @@ namespace ProyectoFinalG5.Controllers
 
             if (reserva == null)
                 return RedirectToAction("Listar");
+
+            // =========================================================================
+            // NUEVA VALIDACIÓN EN EDITAR: Impedir cambiar a fecha/hora pasada
+            // =========================================================================
+            if (r.FechaReserva != default && r.IdHorarioFijo > 0)
+            {
+                var horario = _context.HorariosFijos.Find(r.IdHorarioFijo);
+                if (horario != null)
+                {
+                    var fechaHoraReserva = r.FechaReserva.Date + horario.HoraInicio;
+
+                    if (fechaHoraReserva <= DateTime.Now)
+                    {
+                        CargarCombos();
+                        ViewBag.MetodosPago = new List<string> { "Efectivo", "Yape", "Transferencia", "Tarjeta" };
+                        ModelState.AddModelError("", "No se puede actualizar una reserva a una fecha u hora que ya ha pasado.");
+                        return View(reserva);
+                    }
+                }
+            }
+            // =========================================================================
 
             reserva.IdCliente = r.IdCliente;
             reserva.IdEmpleado = r.IdEmpleado;

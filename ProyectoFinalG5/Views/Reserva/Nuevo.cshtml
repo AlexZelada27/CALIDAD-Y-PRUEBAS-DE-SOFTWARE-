@@ -134,7 +134,16 @@
 
         <form method="post">
 
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <!-- Mensajes de error generales sin viñetas ni puntos -->
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div class="text-danger small mb-3">
+                    @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                    {
+                        <div>@error.ErrorMessage</div>
+                    }
+                </div>
+            }
 
             <!-- Usuario en negro -->
             <h5 class="section-title">

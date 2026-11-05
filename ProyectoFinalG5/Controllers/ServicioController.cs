@@ -27,10 +27,31 @@ namespace ProyectoFinalG5.Controllers
         [HttpPost]
         public IActionResult Nuevo(Servicio s)
         {
+            // Elimina los mensajes automáticos en inglés que genera el framework
+            ModelState.Remove("TipoServicio");
+            ModelState.Remove("IdTipoServicio");
+
             if (s.IdTipoServicio == 0)
             {
                 ViewBag.TipoServicios = _context.TipoServicios.ToList();
                 ModelState.AddModelError("", "Seleccione un tipo de servicio");
+                return View(s);
+            }
+
+            // Validación para evitar precios negativos
+            if (s.Precio < 0)
+            {
+                ViewBag.TipoServicios = _context.TipoServicios.ToList();
+                ModelState.AddModelError("", "No se puede registrar un precio con signo negativo u otros caracteres inválidos.");
+                return View(s);
+            }
+
+            // Validación para evitar nombres de servicios duplicados (CP-12)
+            bool nombreExiste = _context.Servicios.Any(x => x.Nombre.ToLower() == s.Nombre.ToLower());
+            if (nombreExiste)
+            {
+                ViewBag.TipoServicios = _context.TipoServicios.ToList();
+                ModelState.AddModelError("", "Ya existe un servicio registrado con este nombre.");
                 return View(s);
             }
 
@@ -58,10 +79,31 @@ namespace ProyectoFinalG5.Controllers
             if (servicio == null)
                 return RedirectToAction("Listar");
 
+            // Elimina los mensajes automáticos en inglés
+            ModelState.Remove("TipoServicio");
+            ModelState.Remove("IdTipoServicio");
+
             if (s.IdTipoServicio == 0)
             {
                 ViewBag.TipoServicios = _context.TipoServicios.ToList();
                 ModelState.AddModelError("", "Seleccione un tipo de servicio");
+                return View(s);
+            }
+
+            // Validación para evitar precios negativos en edición
+            if (s.Precio < 0)
+            {
+                ViewBag.TipoServicios = _context.TipoServicios.ToList();
+                ModelState.AddModelError("", "No se puede registrar un precio con signo negativo u otros caracteres inválidos.");
+                return View(s);
+            }
+
+            // Validación para evitar nombres duplicados al editar
+            bool nombreExiste = _context.Servicios.Any(x => x.Nombre.ToLower() == s.Nombre.ToLower() && x.IdServicio != s.IdServicio);
+            if (nombreExiste)
+            {
+                ViewBag.TipoServicios = _context.TipoServicios.ToList();
+                ModelState.AddModelError("", "Ya existe otro servicio registrado con este nombre.");
                 return View(s);
             }
 

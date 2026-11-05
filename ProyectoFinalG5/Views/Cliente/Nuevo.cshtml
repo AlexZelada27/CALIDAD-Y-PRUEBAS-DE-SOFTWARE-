@@ -12,16 +12,23 @@
 
             <h3 class="text-center mb-4">Nuevo Cliente</h3>
 
-            <form method="post">
+            <!-- Agregamos asp-action="Nuevo" para asegurar que envíe los datos al método correcto -->
+            <form asp-action="Nuevo" method="post">
 
                 <div class="mb-3">
                     <label class="form-label">Nombre</label>
-                    <input name="Nombre" class="form-control" placeholder="Ingrese su nombre" />
+                    <!-- Cambiamos name="Nombre" por asp-for="Nombre" -->
+                    <input asp-for="Nombre" class="form-control" placeholder="Ingrese su nombre" />
+                    <!-- Agregamos este span para que muestre el error si el nombre está vacío -->
+                    <span asp-validation-for="Nombre" class="text-danger small"></span>
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Teléfono</label>
-                    <input name="Telefono" class="form-control" placeholder="Ingrese su teléfono" />
+                    <!-- Cambiamos name="Telefono" por asp-for="Telefono" -->
+                    <input asp-for="Telefono" class="form-control" placeholder="Ingrese su teléfono" />
+                    <!-- Agregamos este span para que muestre el error si el teléfono está vacío o es inválido -->
+                    <span asp-validation-for="Telefono" class="text-danger small"></span>
                 </div>
 
                 <button type="submit" class="btn btn-success w-100">
@@ -36,5 +43,5 @@
 
         </div>
     </div>
-
 </div>
+

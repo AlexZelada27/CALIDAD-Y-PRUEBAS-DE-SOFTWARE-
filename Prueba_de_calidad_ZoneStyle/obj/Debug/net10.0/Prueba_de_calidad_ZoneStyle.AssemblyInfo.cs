@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Prueba_de_calidad_ZoneStyle")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2986f958990bfd4f357de093ce8287e2a4972def")]
 [assembly: System.Reflection.AssemblyProductAttribute("Prueba_de_calidad_ZoneStyle")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Prueba_de_calidad_ZoneStyle")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

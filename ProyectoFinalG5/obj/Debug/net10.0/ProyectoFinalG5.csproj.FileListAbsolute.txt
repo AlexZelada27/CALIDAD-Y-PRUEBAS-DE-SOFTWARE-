@@ -673,3 +673,5 @@ E:\Ciclos_Universidad_UPN\8vo Ciclo\Calidad y Pruebas Software\Proyecto (Zip)\Pr
 E:\Ciclos_Universidad_UPN\8vo Ciclo\Calidad y Pruebas Software\Proyecto (Zip)\ProyectoFinalG5\ProyectoFinalG5\ProyectoFinalG5\obj\Debug\net10.0\ProyectoFinalG5.genruntimeconfig.cache
 E:\Ciclos_Universidad_UPN\8vo Ciclo\Calidad y Pruebas Software\Proyecto (Zip)\ProyectoFinalG5\ProyectoFinalG5\ProyectoFinalG5\obj\Debug\net10.0\ref\ProyectoFinalG5.dll
 E:\Ciclos_Universidad_UPN\8vo Ciclo\Calidad y Pruebas Software\Proyecto (Zip)\ProyectoFinalG5\ProyectoFinalG5\ProyectoFinalG5\bin\Debug\net10.0\dotnet-tools.json
+E:\Ciclos_Universidad_UPN\8vo Ciclo\Calidad y Pruebas Software\Proyecto (Zip)\ProyectoFinalG5\ProyectoFinalG5\ProyectoFinalG5\obj\Debug\net10.0\ProyectoFinalG5.sourcelink.json
+E:\Ciclos_Universidad_UPN\8vo Ciclo\Calidad y Pruebas Software\Proyecto (Zip)\ProyectoFinalG5\ProyectoFinalG5\ProyectoFinalG5\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
