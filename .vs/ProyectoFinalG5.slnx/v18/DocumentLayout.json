@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0F0999DA-E135-1DAF-3716-719986A3F45D}|ProyectoFinalG5\\ProyectoFinalG5.csproj|e:\\ciclos_universidad_upn\\8vo ciclo\\calidad y pruebas software\\proyecto (zip)\\proyectofinalg5\\proyectofinalg5\\proyectofinalg5\\views\\cliente\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F0999DA-E135-1DAF-3716-719986A3F45D}|ProyectoFinalG5\\ProyectoFinalG5.csproj|solutionrelative:proyectofinalg5\\views\\cliente\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F0999DA-E135-1DAF-3716-719986A3F45D}|ProyectoFinalG5\\ProyectoFinalG5.csproj|e:\\ciclos_universidad_upn\\8vo ciclo\\calidad y pruebas software\\proyecto (zip)\\proyectofinalg5\\proyectofinalg5\\proyectofinalg5\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F0999DA-E135-1DAF-3716-719986A3F45D}|ProyectoFinalG5\\ProyectoFinalG5.csproj|solutionrelative:proyectofinalg5\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0F0999DA-E135-1DAF-3716-719986A3F45D}|ProyectoFinalG5\\ProyectoFinalG5.csproj|e:\\ciclos_universidad_upn\\8vo ciclo\\calidad y pruebas software\\proyecto (zip)\\proyectofinalg5\\proyectofinalg5\\proyectofinalg5\\views\\servicio\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0F0999DA-E135-1DAF-3716-719986A3F45D}|ProyectoFinalG5\\ProyectoFinalG5.csproj|solutionrelative:proyectofinalg5\\views\\servicio\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -35,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{0F0999DA-E135-1DAF-3716-719986A3F45D}|ProyectoFinalG5\\ProyectoFinalG5.csproj|solutionrelative:proyectofinalg5\\views\\cliente\\nuevo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F0999DA-E135-1DAF-3716-719986A3F45D}|ProyectoFinalG5\\ProyectoFinalG5.csproj|e:\\ciclos_universidad_upn\\8vo ciclo\\calidad y pruebas software\\proyecto (zip)\\proyectofinalg5\\proyectofinalg5\\proyectofinalg5\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F0999DA-E135-1DAF-3716-719986A3F45D}|ProyectoFinalG5\\ProyectoFinalG5.csproj|solutionrelative:proyectofinalg5\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0F0999DA-E135-1DAF-3716-719986A3F45D}|ProyectoFinalG5\\ProyectoFinalG5.csproj|e:\\ciclos_universidad_upn\\8vo ciclo\\calidad y pruebas software\\proyecto (zip)\\proyectofinalg5\\proyectofinalg5\\proyectofinalg5\\controllers\\horariofijocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F0999DA-E135-1DAF-3716-719986A3F45D}|ProyectoFinalG5\\ProyectoFinalG5.csproj|solutionrelative:proyectofinalg5\\controllers\\horariofijocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -50,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,19 +62,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Editar.cshtml",
-              "DocumentMoniker": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Views\\Reserva\\Editar.cshtml",
-              "RelativeDocumentMoniker": "ProyectoFinalG5\\Views\\Reserva\\Editar.cshtml",
-              "ToolTip": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Views\\Reserva\\Editar.cshtml",
-              "RelativeToolTip": "ProyectoFinalG5\\Views\\Reserva\\Editar.cshtml",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAAAIkAAAAGAAAAAAAAAA==",
+              "DocumentMoniker": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Views\\Cliente\\Editar.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinalG5\\Views\\Cliente\\Editar.cshtml",
+              "ToolTip": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Views\\Cliente\\Editar.cshtml",
+              "RelativeToolTip": "ProyectoFinalG5\\Views\\Cliente\\Editar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-29T02:20:56.91Z"
+              "WhenOpened": "2026-11-05T18:39:40.375Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Nuevo.cshtml",
               "DocumentMoniker": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Views\\Reserva\\Nuevo.cshtml",
               "RelativeDocumentMoniker": "ProyectoFinalG5\\Views\\Reserva\\Nuevo.cshtml",
@@ -82,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Editar.cshtml",
               "DocumentMoniker": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Views\\Servicio\\Editar.cshtml",
               "RelativeDocumentMoniker": "ProyectoFinalG5\\Views\\Servicio\\Editar.cshtml",
@@ -95,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Nuevo.cshtml",
               "DocumentMoniker": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Views\\Servicio\\Nuevo.cshtml",
               "RelativeDocumentMoniker": "ProyectoFinalG5\\Views\\Servicio\\Nuevo.cshtml",
@@ -107,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ServicioController.cs",
               "DocumentMoniker": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Controllers\\ServicioController.cs",
               "RelativeDocumentMoniker": "ProyectoFinalG5\\Controllers\\ServicioController.cs",
@@ -119,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ReservaController.cs",
               "DocumentMoniker": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Controllers\\ReservaController.cs",
               "RelativeDocumentMoniker": "ProyectoFinalG5\\Controllers\\ReservaController.cs",
@@ -131,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Nuevo.cshtml",
               "DocumentMoniker": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Views\\Cliente\\Nuevo.cshtml",
               "RelativeDocumentMoniker": "ProyectoFinalG5\\Views\\Cliente\\Nuevo.cshtml",
@@ -143,7 +148,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "ProyectoFinalG5\\Models\\Cliente.cs",
+              "ToolTip": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Models\\Cliente.cs",
+              "RelativeToolTip": "ProyectoFinalG5\\Models\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T17:55:22.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Views\\Reserva\\Editar.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinalG5\\Views\\Reserva\\Editar.cshtml",
+              "ToolTip": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Views\\Reserva\\Editar.cshtml",
+              "RelativeToolTip": "ProyectoFinalG5\\Views\\Reserva\\Editar.cshtml",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAIkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-29T02:20:56.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "ProyectoFinalG5\\Controllers\\ClienteController.cs",
@@ -155,19 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Models\\Cliente.cs",
-              "RelativeDocumentMoniker": "ProyectoFinalG5\\Models\\Cliente.cs",
-              "ToolTip": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Models\\Cliente.cs",
-              "RelativeToolTip": "ProyectoFinalG5\\Models\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-22T17:55:22.233Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "HorarioFijoController.cs",
               "DocumentMoniker": "E:\\Ciclos_Universidad_UPN\\8vo Ciclo\\Calidad y Pruebas Software\\Proyecto (Zip)\\ProyectoFinalG5\\ProyectoFinalG5\\ProyectoFinalG5\\Controllers\\HorarioFijoController.cs",
               "RelativeDocumentMoniker": "ProyectoFinalG5\\Controllers\\HorarioFijoController.cs",
